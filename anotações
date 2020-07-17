@@ -1,0 +1,52 @@
+Métodos Especiais
+
+1° Métodos Acessores = São os Métodos que dão acesso ao uma determinada coisa.
+Getters();
+
+get.documento = pegar os documento.
+
+Getters = Vai dificultar o acesso direto, não deixando ir direto para o atributo.
+
+Não dar acesso direto ao Objeto é mais seguro.
+Existem formas de dar acessos ao um determinado atributo sem com tudo dar acesso
+direto ao esse atributo. Isso garante uma segurança adicional.
+
+CONCLUSÃO:
+Métodos Acessores ao Getters consegue acessar um determinado atributo mantendo a
+segurança de acesso a ele.
+--------------------------------------------------------------------------------------------------
+2° Métodos Modificadores ou Setters = Modificão coisas que estão dentro do Objeto
+garantindo também melhor segurança do atributo, não vou deixar mexerem direto no
+atributo. Ele adiciona parâmetro no meu atributo.
+
+e = nova Estante;
+e.setTotDoc(doc);
+
+Normalmente o Métodos Setters precissa de um parâmetro para poder funcionar.
+--------------------------------------------------------------------------------------------------
+3° Métodos Construtor ou Construct
+Execultar uma tarefa sem que o usúario precise usar uma chamada.
+Faz coisas automaticamente sem interferencia de ninguém.
+Criar um parâmetro com tudo pronto como padrão sem editar ela. Ela já vem pronta,
+mas nada impede de edita-la.
+O Método Construtor pode receber parâmetro.
+
+ex. de Métodos Construtor:
+
+Classe Caneta {
+    Metodo construtor
+    (m: Caractere,
+    c: Caractere,       // Metodo com 3 parâmetros
+    p: Real)
+
+    setModelo(m)
+    setCor(c)
+    setPonta(p)
+    tampar()
+}
+
+// Para passar os parâmetro é simples...
+ex:
+
+c1 = nova Caneta;
+ ("BIC","Azul",0.5);
